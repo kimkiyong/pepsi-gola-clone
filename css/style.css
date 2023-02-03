@@ -52,6 +52,11 @@ a{
     font-size: 16px;
     text-align: center;
 }
+.social{
+    text-align: center; /*그림 <--- 텍스트*/
+    margin: 2rem 1rem; /*바깥 여백을 상하2배 좌우 기본값*/
+    padding: 20px 0;
+}
 
 /* 네이밍 규칙 
 케밥케이스
