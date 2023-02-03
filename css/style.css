@@ -1,5 +1,21 @@
 
-{
+*{
     margin:0; /*(안)여백 :없음*/
     padding:0; 
+}
+
+/* 선택자 { 속성1 : 속성값 1; 
+            속성2: 속성값2; 
+            계속...    
+*/
+
+a{ color: red;
+    text-decoration: none;
+
+}
+.logo {
+    width: 100px;
+    height: 110px;
+    margin: 0 auto;
+    padding: 50px;
 }
