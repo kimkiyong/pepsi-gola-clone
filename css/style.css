@@ -31,3 +31,33 @@ a{
     margin: 0 auto;
     padding: 30px;
 }
+.hide{
+    display: none; /*화면에 표시안함*/
+}
+
+.movie{ /*클래스 movie의 스타일을 결정한다.*/
+    width: 600px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.movie-title{
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase; /*대문자*/
+    margin: .2rem 0 1rem 0; /*밖 여백 상하 좌우 0.3 좌우 0* 상->우->하->왼 순서*/
+ }
+
+.movie-desc{
+    color: #555555;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* 네이밍 규칙 
+케밥케이스
+movie _ title => moive -title 
+2.카멜 또는 케멀 케이스
+moive _title -->movie Title
+
+Pascal case ==> 파스칼
+main method --> public  Main으로 쓰는것처럼 */
