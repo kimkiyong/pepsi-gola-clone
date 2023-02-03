@@ -9,13 +9,19 @@
             계속...    
 */
 
-a{ color: red;
-    text-decoration: none;
-
-}
 .logo {
     width: 100px;
     height: 110px;
     margin: 0 auto;
     padding: 50px;
+}
+.menu{
+    background-color: #005891; /*배경 색상*/
+    text-align: center;
+    padding: 20px 0;
+}
+
+a{ 
+    color: white;
+    margin: 10px;
 }
