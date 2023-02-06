@@ -57,7 +57,11 @@ a{
     margin: 2rem 1rem; /*바깥 여백을 상하2배 좌우 기본값*/
     padding: 20px 0;
 }
-
+/* .contact{} h2 class = 무비 타이틀과 다른가>? */
+.contatct, .lteatiiojn
+#line{
+margin: kine2ws;
+}
 /* 네이밍 규칙 
 케밥케이스
 movie _ title => moive -title 
