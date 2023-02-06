@@ -74,6 +74,11 @@ a{
     margin-bottom: 3.5rem;
     font-size: 0.9rem;
 }
+@media screen and (max-width: 430px){
+    body{
+        background-color: gold;
+    }
+}
 /* 네이밍 규칙 
 케밥케이스
 movie _ title => moive -title 
