@@ -58,9 +58,20 @@ a{
     padding: 20px 0;
 }
 /* .contact{} h2 class = 무비 타이틀과 다른가>? */
-.contatct, .lteatiiojn
 #line{
-margin: kine2ws;
+    margin: 3rem 0;/*위,아래 3rem 좌,우 0(=적용X)*/
+}
+.contact, .location{ /* 왜? <h2 class="movie-title"과 다른가?*/ 
+    text-align: center;
+}
+
+.location p:nth-child(1){ /*두개의 p중에서 첫번째(자식요소)*/
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+.location p:nth-child(2){ /*두개의 p중에서 두번째(자식요소)*/
+    margin-bottom: 3.5rem;
+    font-size: 0.9rem;
 }
 /* 네이밍 규칙 
 케밥케이스
