@@ -15,6 +15,13 @@
     margin: 0 auto;
     padding: 50px;
 }
+    .buger {
+        position: absolute;
+        top: 100px;
+        right: 7%;
+        display: none;
+    }
+
 .menu{
     background-color: #005891; /*배경 색상*/
     text-align: center;
@@ -75,10 +82,35 @@ a{
     font-size: 0.9rem;
 }
 @media screen and (max-width: 430px){
-    body{
-        background-color: gold;
+   .buger{
+    display: block ; /* 블록은 보이게 하는것*/
+   }
+    .menu{
+        display: none;
     }
-}
+    .hero{
+        width: 100%;   /*가로폭 가득 채워서 */
+       }
+        .hero img{
+            width: 100%;   /*가로폭 가득 채워서 */
+            object-fit: cover; 
+        
+            
+        }
+        .movie 
+        {width: 100%;   /*가로폭 가득 채워서 */ 
+        }
+        .movie img{
+
+         width: 70%;   /*가로폭 가득 채워서 */
+        object-fit: cover; 
+        margin: 10% 15%;
+        }
+        .movie img:nth-of-type(2){ /* :nth -child(n) {----done} */
+            display: none; /*2번째 이미지는 숨김 ==> 피그마 설계를 반영? */
+        }
+    }
+
 /* 네이밍 규칙 
 케밥케이스
 movie _ title => moive -title 
