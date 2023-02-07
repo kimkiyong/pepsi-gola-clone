@@ -15,7 +15,7 @@
     margin: 0 auto;
     padding: 50px;
 }
-    .buger {
+    .opener {
         position: absolute;
         top: 100px;
         right: 7%;
@@ -80,15 +80,40 @@ a{
 .location p:nth-child(2){ /*두개의 p중에서 두번째(자식요소)*/
     margin-bottom: 3.5rem;
     font-size: 0.9rem;
+
+}
+#closer{
+    font-size: 4rem;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    display: block;
+    margin: 0 0 10rem 0;
+    position: relative;
+    top: 60px;
+    left: 267;
 }
 @media screen and (max-width: 430px){
-   .buger{
+   .opener{
     display: block ; /* 블록은 보이게 하는것*/
    }
-    .menu{
-        display: none;
-    }
-    .hero{
+   .menu{
+    position: absolute;
+    right:0;
+    width: 7674418604651163%;
+    top:0;
+    height: 100vh;
+    background-color: rgba(19,30,68,0.8);
+    background-image: url(../images/mobile-bg1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+   }
+   .menua{
+    display: block;
+    text-align: left;
+   }
+   }
+        .hero{
         width: 100%;   /*가로폭 가득 채워서 */
        }
         .hero img{
