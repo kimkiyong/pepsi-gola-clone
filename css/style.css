@@ -31,7 +31,7 @@ a{color: crimson;
     /*버거였었다.*/
     display: none;
     position: absolute;
-    top: 100px;
+    top: 60px;
     right: 5%;
 }
 .menu{
@@ -50,6 +50,22 @@ a{
     margin: 0 auto; 
     padding: 20px; 
 }
+.brand-body{
+    max-width: 800px;
+    margin:0 auto;
+}
+.body1 img .body3 img {
+float: left;
+margin:  0 1rem 0 0
+}
+.body2{
+    margin: 3rem 0;
+}
+.body2 img{
+float: right;
+margin:  0 0 0 5rem;
+}
+
 
 .hide{
     display: none; /* 화면에 표시: 안함*/
@@ -60,8 +76,11 @@ a{
     margin: 0 auto;
     font-size: 0;
 }
+.tip{
+    text-align: center;
+}
 
-.page-title{
+.page-title {
     font-size: 22px;
     text-align: center;
     text-transform: uppercase; /* 대문자 */
@@ -73,11 +92,9 @@ a{
     font-size: 16px;
     color: #555555; /*HEX 색상 표기법*/
 }
-.tip{
-    text-align: center;
-}
 
 .social{
+   clear:  both; /*leaft right 플로트 해제*/
     text-align: center; /* 그림은 <-- 텍스트*/
     margin: 2rem 1rem; /* 밖여백 상하 2배, 좌우 기본값*/
 }
@@ -101,29 +118,49 @@ a{
 }
 
 #closer {
-    font-size: 2rem;
+    display: none;
+    font-size: 4rem;
     background-color: transparent;
     border: 0;
     color: white;
-    display: block;
     margin: 0 0 10rem 0;
+    position: relative;
+    top: 18px;
+    left: 295px;
     /* text-align: right; */
 }
 
 /*반응형 웹 =모바일을 위한 미디어쿼리 삽입)*/
 @media screen and (max-width:430px) {
+    #closer{
+        display: block;
+    }
+    .brand-body{
+        padding: 30px;
+    }
+    .brand-body img{
+        width: 80%;
+        object-fit: contain;
+        margin: 30px;
+    }
     .opener{
         display: block; /* block level element : 블럭요소 */
     }
-    .menu{
-            position: absolute;
-            right: 0;
-            top: 0;
-            height: 100%;
-            background-color: rgba(0,0,0,0.8);
-    
+    .menu {
+        position: fixed;
+        width:76.7674418604651163%;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background-color: rgba(19,30,68,0.8);
+        background-image: url("../images/mobile-bg1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
     }
-
+    .menu a{
+        display: block;
+        text-align: left;
+    }
     .hero{
         width: 430px;
     }
